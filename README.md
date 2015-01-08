@@ -1,4 +1,4 @@
-OfficialSite
+Official website of Coding Matters, Inc
 ============
 
-Official website of Coding Matters, Inc
+
