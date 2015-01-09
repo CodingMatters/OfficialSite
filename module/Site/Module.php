@@ -34,9 +34,9 @@ use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
 /**
- * MegaMitch\Module
+ * Site\Module
  * 
- * @package MegaMitch
+ * @package Site
  */
 class Module implements 
     AutoloaderProviderInterface,

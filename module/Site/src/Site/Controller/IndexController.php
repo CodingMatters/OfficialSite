@@ -30,9 +30,9 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 /**
- * MegaMitch\Controller\IndexController
+ * Site\Controller\IndexController
  * 
- * @package MegaMitch\Controller
+ * @package Site\Controller
  */
 class IndexController extends AbstractActionController
 {
