@@ -1,127 +1,80 @@
-body {
-    padding-top: 60px;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
-.zf-green {
-    color: #68b604;
+body {    
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    background-color: #bdc3c7;
 }
 
-.btn-success {
-  background-color: #57a900;
-  background-image: -moz-linear-gradient(top, #70d900, #57a900);
-  background-image: -ms-linear-gradient(top, #70d900, #57a900);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
-  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
-  background-image: -o-linear-gradient(top, #70d900, #57a900);
-  background-image: linear-gradient(top, #70d900, #57a900);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+section {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-.btn-success:hover,
-.btn-success:active,
-.btn-success.active,
-.btn-success.disabled,
-.btn-success[disabled] {
-  background-color: #57a900;
+#services {
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #28736E;
 }
 
-.btn-success:active, .btn-success.active {
-  background-color: #57a900;
+#about {
+    color: #363636; 
+    font-size: 16px;
 }
 
-div.container a.brand {
-    background: url("../img/logo.png") no-repeat scroll 0 10px transparent;
-    margin-left: 0;
-    padding: 8px 20px 12px 40px;
+footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /*width: inherit;*/
+    background-color: #252525;
 }
 
-.form-signin-header {
-    margin: 0 auto;
+.intro {
+    background-image: url('/img/header.png');
+    background-size: 1370px 678px;
+    background-repeat: no-repeat;
+    height: 678px;
+/*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
 }
 
-.form-signin {
-    max-width: 450px;
-    padding: 19px 29px 29px;
-    margin: 0 auto 20px;
-    /*background-color: #fff;
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-            box-shadow: 0 1px 2px rgba(0,0,0,.05);*/
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-    margin-bottom: 10px;
-}
-.form-signin input[type="text"],
-.form-signin input[type="password"] {
-    font-size: 14px;
-    height: auto;
-    margin-bottom: 10px;
-    padding: 7px 9px;
+.intro .intro-body {
+    /*display: table-cell;*/
+    vertical-align: middle;
+    padding-top: 100px;
 }
 
-#footer {
-	border-top: 1px solid #000;
+.intro .intro-body .brand-heading {
+    font-size: 30px;
+    text-shadow: 2px 2px #363636;
 }
 
-#footer .inner {
-    padding: 20px 0;
-	background: #111;
-	border-top: 1px solid #222;	
+.intro .intro-body .intro-text {
+    font-size: 12px;
+    text-shadow: 1px 1px #363636;
 }
 
-.footer-links a {
-	color: #57a900;
-}
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        /*padding: 0;*/
+        padding-top: 200px;
+    }
 
-.footer-links a:hover {
-	color: #8bc34a;
-    text-decoration: none;
-}
+    .intro .intro-body .brand-heading {
+        font-size: 40px;
+    }
 
-#extra {	
-	border-top: 1px solid #827717;
-}
-
-#extra .inner {
-	padding: 20px;
-	
-	color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.4);
-	background-color: #7cb342;
-	
-	border-top: 1px solid #827717;
-}
-
-#extra h3 {	
-	font-weight: 400;
-}
-
-#landing {
-	height: auto;
-	
-	border: none;
-	
-	overflow: hidden;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.4);
-    
-}
-
-#landing .inner {
-	color: #FFF;
-	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
-    	
-	background: #8bc34a;
-    /*background: #81994D url(./img/header-bg.png) repeat 0 0;*/
-	
-	
-    
-}
-
-#landing .container {
-	padding-top: 30px;
+    .intro .intro-body .intro-text {
+        font-size: 15px;
+    }
 }

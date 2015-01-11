@@ -2,33 +2,80 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">        
+        <meta charset="utf-8">
+        <meta description="Our forte is building software applications for web and mobile platforms. The way we develop software applications, coding in particular, matters most. It's our responsibility to be creative and to be innovative in delivering software that harness the competitive advantage of our clients but most importantly we do it right.">
         <?php echo $this->headMeta()->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
             ->appendName('viewport', 'width=device-width, initial-scale=1.0');
         ?>
-        <?php echo $this->headTitle('Coding Matters, Inc.')
+        <?php echo $this->headTitle('Coding Matters')
             ->setSeparator(' - ')
             ->setAutoEscape(false);
         ?>
         <?php echo $this->headLink(['rel' => 'shortcut icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath() . '/css/style.css')
             ->prependStylesheet($this->basePath() . '/assets/font-awesome/css/font-awesome.css')
             ->prependStylesheet($this->basePath() . '/assets/bootstrap/css/bootstrap-theme.min.css')
             ->prependStylesheet($this->basePath() . '/assets/bootstrap/css/bootstrap.min.css')
         ?>
     </head>
-    <body>
-        <header>
-             
-        </header>
-        <section>
-            <div class="mainwrapper">
-                <?php echo $this->content; ?>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="<?php echo $this->url('home'); ?>">
+                        <img src="<?php echo $this->basePath(). "/img/logo.png";?>" class="logo" alt="Coding Matters Logo" data-src="<?php echo $this->basePath(). "/img/logo.png";?>" data-src-retina="<?php echo $this->basePath(). "/img/logo.png";?>" height="120"/>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-        </section>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h1 class="brand-heading">Why <strong>CODING MATTERS</strong></h1>
+                            <p class="intro-text">The way we develop software applications, coding in particular, matters most. It's our responsibility to be creative and to be innovative in delivering software that harness the competitive advantage of our clients but most importantly we <strong>DO IT RIGHT</strong>.</p>
+                            <a href="#about" class="btn btn-circle page-scroll">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <?php echo $this->content; ?>
+        
         <footer>
-            
+            <div class="container">
+                <p>&copy; 2015 Coding Matters, Inc. All rights reserved.</p>
+            </div>
         </footer>
-        <?php echo $this->inlineScript()           
+        <?php echo $this->inlineScript()
             ->prependFile($this->basePath() . '/assets/bootstrap/js/tab.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/tooltip.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/popover.js')
