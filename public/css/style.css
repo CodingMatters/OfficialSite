@@ -37,14 +37,12 @@ footer {
 }
 
 .intro {
-    background-image: url('/img/header.png');
-    background-size: 1370px 678px;
-    background-repeat: no-repeat;
-    height: 678px;
-/*    -webkit-background-size: cover;
+    background: url(/img/header.png) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
 
 .intro .intro-body {
