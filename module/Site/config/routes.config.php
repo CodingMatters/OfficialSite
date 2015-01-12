@@ -29,12 +29,42 @@ return [
     'router'    => [
         'routes' => [
             'home' => [
-                'type'      => 'Zend\Mvc\Router\Http\Literal',
+                'type'      => 'Literal',
                 'options'   => [
                     'route'     => '/',
                     'defaults'  => [
                         'controller'    => 'Site\Controller\Index',
                         'action'        => 'index'
+                    ]
+                ]
+            ],
+            'terms-and-condition' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/terms-and-condition',
+                    'defaults' => [
+                        'controller'    => 'Site\Controller\Index',
+                        'action'        => 'terms-and-condition'
+                    ]
+                ]
+            ],
+            'privacy-policy' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/privacy-policy',
+                    'defaults' => [
+                        'controller'    => 'Site\Controller\Index',
+                        'action'        => 'privacy-policy'
+                    ]
+                ]
+            ],
+            'disclaimer' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/disclaimer',
+                    'defaults' => [
+                        'controller'    => 'Site\Controller\Index',
+                        'action'        => 'disclaimer'
                     ]
                 ]
             ]

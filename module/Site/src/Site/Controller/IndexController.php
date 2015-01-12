@@ -40,4 +40,24 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel(["name" => new \stdClass()]);
     }
+    
+    public function termsAndConditionAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function privacyPolicyAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function disclaimerAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function copyrightAction()
+    {
+        return new ViewModel();
+    }
 }
