@@ -44,7 +44,8 @@ return [
         'not_found_template'        => 'error/404',
         'exception_template'        => 'error/index',
         'template_map'              => [
-            'site/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'site/layout'           => __DIR__ . '/../view/layout/single-layout.phtml',
+            'site/details'           => __DIR__ . '/../view/layout/layout.phtml',
             'template/footer'           => __DIR__ . '/../view/layout/partial/footer.phtml',
             'template/navigation/sidebar'           => __DIR__ . '/../view/layout/template/navigation/sidebar.phtml',
             'template/navigation/header'           => __DIR__ . '/../view/layout/template/navigation/header.phtml',

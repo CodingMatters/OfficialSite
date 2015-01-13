@@ -67,6 +67,26 @@ return [
                         'action'        => 'disclaimer'
                     ]
                 ]
+            ],
+            'copyright' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/copyright',
+                    'defaults' => [
+                        'controller'    => 'Site\Controller\Index',
+                        'action'        => 'copyright'
+                    ]
+                ]
+            ],
+            'sitemap' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/sitemap',
+                    'defaults' => [
+                        'controller'    => 'Site\Controller\Index',
+                        'action'        => 'sitemap'
+                    ]
+                ]
             ]
         ]
     ]

@@ -1,6 +1,77 @@
-<div class="row-fluid">
-    <footer>
-        <hr>
-        <p>Copyright &copy; <?php echo date('Y') ?> by <a href="<?php echo $this->url('home') ?>">Coding Matters, Inc.</a> <?php echo $this->translate('All rights reserved.') ?></p>
-    </footer>
+<div class="container">
+    <div class="row" style="padding-bottom: 20px;">
+        <div class="col-md-7">
+            <div class="row">
+                <h4>Our Services: <small class="text-warning">** services coming soon</small></h4>
+                <div class="col-md-6 col-sm-6">
+                    <div class="col-sm-6 col-xs-6">
+                        <h5>Branding</h5>
+                        <ul>
+                            <li>Logo</li>
+                            <li>Banner</li>
+                            <li>Business Cards</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <h5>Marketing</h5>
+                        <ul>
+                            <li>SEO<span class="text-warning">**</span></li>
+                            <li>Email<span class="text-warning">**</span></li>
+                            <li>Ads<span class="text-warning">**</span></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="col-sm-6 col-xs-6">
+                        <h5>Developing</h5>
+                        <ul>
+                            <li>Web Apps</li>
+                            <li>Mobile Apps<span class="text-warning">**</span></li>
+                            <li>API Service<span class="text-warning">**</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <h5>Training</h5>
+                        <ul>
+                            <li>Programming<span class="text-warning">**</span></li>
+                            <li>Designing<span class="text-warning">**</span></li>
+                            <li>Marketing<span class="text-warning">**</span></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-5">
+            <div class="row" id="social-links">
+                <h4>Connect With Us:</h4>
+                <div class="container">
+                    <a href="https://www.facebook.com/codingmatters" target="_blank">
+                        <i class="fa fa-facebook-square fa-3x" id="facebook"></i>
+                    </a>
+    <!--                            <a href="#" target="_blank">
+                        <i class="fa fa-twitter-square fa-3x" id="twitter"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fa fa-linkedin-square fa-3x" id="linkedin"></i>
+                    </a>-->
+                </div>
+            </div>
+            <div class="row" id="legal-links">
+                <h4>Our Legal Information:</h4>
+                <div class="col-sm-3 col-xs-3"><a href="<?php echo $this->url('terms-and-condition'); ?>">Terms</a></div>
+                <div class="col-sm-3 col-xs-3"><a href="<?php echo $this->url('privacy-policy'); ?>">Privacy</a></div>
+                <div class="col-sm-3 col-xs-3"><a href="<?php echo $this->url('disclaimer'); ?>">Disclaimer</a></div>
+                <div class="col-sm-3 col-xs-3"><a href="<?php echo $this->url('copyright'); ?>">Copyright</a></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <span> &copy; <?php echo date('Y'); ?> Coding Matters, Inc. All rights reserved.</span>
+    </div>
 </div>

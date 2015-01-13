@@ -43,21 +43,36 @@ class IndexController extends AbstractActionController
     
     public function termsAndConditionAction()
     {
+        $this->layout('site/details');
+        
         return new ViewModel();
     }
     
     public function privacyPolicyAction()
     {
+        $this->layout('site/details');
+        
         return new ViewModel();
     }
     
     public function disclaimerAction()
     {
+        $this->layout('site/details');
+        
         return new ViewModel();
     }
     
     public function copyrightAction()
     {
+        $this->layout('site/details');
+        
+        return new ViewModel();
+    }
+    
+    public function sitemap()
+    {
+        $this->layout('site/details');
+        
         return new ViewModel();
     }
 }
