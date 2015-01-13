@@ -76,3 +76,16 @@ footer {
         font-size: 15px;
     }
 }
+
+footer {
+    color: grey;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #28736e;
+    text-decoration: none;
+}
