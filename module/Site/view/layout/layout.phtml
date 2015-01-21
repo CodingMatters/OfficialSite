@@ -70,14 +70,27 @@
         <footer>
             <?php echo $this->partial('template/footer', array()); ?>
         </footer>
-        <?php echo $this->inlineScript()
+        
+        <?php $this->inlineScript()
             ->prependFile($this->basePath() . '/js/navbar-header-collapse.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/tab.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/tooltip.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/popover.js')
-//            ->prependFile($this->basePath() . '/assets/jquery-ui/jquery-ui.min.js')
+            ->prependFile($this->basePath() . '/assets/jquery-ui/jquery-ui.min.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/bootstrap.min.js')
             ->prependFile($this->basePath() . '/assets/jquery/jquery.min.js');
         ?>
+        
+        <?php
+            /**
+             * USED FOR SITE ANALYTICS. DO NOT EDIT BEYOND THIS LINE.
+             * 
+             */
+            if (strtolower($_SERVER['APPLICATION_ENV'])  === 'production') {
+                $this->inlineScript()->prependFile($this->basePath() . '/js/google.analytics.js');
+            }
+        ?>
+        
+        <?php echo $this->inlineScript(); ?>
     </body>
 </html>
