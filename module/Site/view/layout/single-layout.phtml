@@ -71,7 +71,7 @@
             <?php echo $this->partial('template/footer', array()); ?>
         </footer>
         
-        <?php $this->inlineScript()
+        <?php echo $this->inlineScript()
             ->prependFile($this->basePath() . '/js/navbar-header-collapse.js')
             ->prependFile($this->basePath() . '/assets/jquery-ui/jquery-ui.min.js')
             ->prependFile($this->basePath() . '/assets/bootstrap/js/bootstrap.min.js')
@@ -96,7 +96,5 @@
         <?php
             }
         ?>
-        
-        <?php echo $this->inlineScript(); ?>
     </body>
 </html>
