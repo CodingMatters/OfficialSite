@@ -46,15 +46,15 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="<?php echo $this->url('home'); ?>">
+                    <a class="navbar-brand" href="<?php echo $this->url('home'); ?>">
                         <img src="<?php echo $this->basePath(). "/img/logo-main.png";?>" class="logo" alt="Coding Matters Logo" data-src="<?php echo $this->basePath(). "/img/logo-main.png";?>" data-src-retina="<?php echo $this->basePath(). "/img/logo-main.png";?>" height="120px"/>
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+<!--                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                         Hidden li included to remove active class from about link when scrolled up past about section 
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
@@ -65,7 +65,7 @@
                             <a class="page-scroll" href="#about">ABOUT</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
@@ -78,17 +78,17 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h1 class="brand-heading">Why <strong>CODING MATTERS&#63</strong></h1>
-                            <p class="intro-text">We are creative and innovative in business processes that harness the competitive advantage of our clients. Most importantly, the way we develop software applications, coding in particular, matters most. <strong>WE DO IT RIGHT</strong>.</p>
+                            <p class="intro-text">We are creative and innovative in developing you business processes that harness the competitive advantage of our product. Most importantly, the way we develop software applications, coding in particular, matters most. <strong>WE JUST DON'T MAKE IT WORK, WE DO IT RIGHT</strong>.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!--<div class="container">-->
-        <?php echo $this->content; ?>
+        <?php // echo $this->content; ?>
         <!--</div>-->
         <footer>
-            <?php echo $this->partial('template/footer', array()); ?>
+            <?php // echo $this->partial('template/footer', array()); ?>
         </footer>
         
         <?php echo $this->inlineScript()
