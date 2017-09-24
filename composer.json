@@ -54,6 +54,7 @@
             "mv bower_components/components-font-awesome public/assets/font-awesome",
             "mv bower_components/components-bootstrap public/assets/bootstrap",
             "rm -rf bower_components"
-        ]
+        ],
+	"serve": "php -S 0.0.0.0:8080 -t public public/index.php"
     }
 }
