@@ -1,5 +1,5 @@
 {
-  "name": "codingmatters/official-website",
+  "name": "codingmatters-official-website",
   "version": "1.0.0",
   "homepage": "https://github.com/CodingMatters/OfficialSite",
   "authors": [
@@ -16,9 +16,9 @@
   "license": "MIT",
   "directory": "public/testasset",
   "dependencies": {
-    "jquery": "2.1.1",
-    "jquery-ui": "1.11.2",
-    "components-font-awesome": "4.2.0",
-    "components-bootstrap": "3.3.1"
+    "jquery": "3.2.1",
+    "jquery-ui": "1.12.1",
+    "components-font-awesome": "4.7.0",
+    "components-bootstrap": "3.3.7"
   }
 }
